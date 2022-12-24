@@ -1,28 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f36094c0-e218-4e1d-bf27-9ca95bdbff44" name="Changes" comment="" />
+    <list default="true" id="f36094c0-e218-4e1d-bf27-9ca95bdbff44" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mySmallBank.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/model/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repository/AccountRepoInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repository/BankRepoInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repository/BankRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/request/AccountRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/request/BankRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/responce/AccountResponce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mySmallBankException/AccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/data/model/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/data/repository/BankRepositoryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2JJkdvEqlUk5z8s8A3NoZHcA6pP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/USER/Documents/mySmallBank",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Documents\mySmallBank" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="data.repository" />
+      <recent name="data.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BankRepositoryTest.testThatWeCanChangeAccountName">
+    <configuration name="BankRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mySmallBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repository" />
+      <option name="MAIN_CLASS_NAME" value="data.repository.BankRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankRepositoryTest.AccountCanBeFoundByAccountName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mySmallBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repository" />
+      <option name="MAIN_CLASS_NAME" value="data.repository.BankRepositoryTest" />
+      <option name="METHOD_NAME" value="AccountCanBeFoundByAccountName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankRepositoryTest.testThatAccountCanBeDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mySmallBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repository" />
+      <option name="MAIN_CLASS_NAME" value="data.repository.BankRepositoryTest" />
+      <option name="METHOD_NAME" value="testThatAccountCanBeDeleted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankRepositoryTest.testThatUserCanCreateAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mySmallBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repository" />
+      <option name="MAIN_CLASS_NAME" value="data.repository.BankRepositoryTest" />
+      <option name="METHOD_NAME" value="testThatUserCanCreateAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankRepositoryTest.testThatWeCanChangeAccountName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mySmallBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repository" />
+      <option name="MAIN_CLASS_NAME" value="data.repository.BankRepositoryTest" />
+      <option name="METHOD_NAME" value="testThatWeCanChangeAccountName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BankRepositoryTest.testThatWeCanChangeAccountName" />
+        <item itemvalue="JUnit.BankRepositoryTest" />
+        <item itemvalue="JUnit.BankRepositoryTest.testThatAccountCanBeDeleted" />
+        <item itemvalue="JUnit.BankRepositoryTest.AccountCanBeFoundByAccountName" />
+        <item itemvalue="JUnit.BankRepositoryTest.testThatUserCanCreateAccount" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +186,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671803669011</updated>
+      <workItem from="1671803671574" duration="3882000" />
+      <workItem from="1671874201297" duration="13638000" />
+      <workItem from="1671892578909" duration="8804000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
