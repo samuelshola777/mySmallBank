@@ -17,8 +17,9 @@ BankServicesInterface bankServicesInterface;
     @Test
     void testThatAccountCanBeCreated() throws BankServiceExpetionImpl {
         bankServicesInterface.registerAccount("samuel", 18);
+        bankServicesInterface.registerAccount("samBone",30);
 
-        assertEquals(1, bankServicesInterface.countAccountUser());
+        assertEquals(2, bankServicesInterface.countAccountUser());
     }
     @Test
     void testThatWeCanFindAccountWithAccountName() throws BankServiceExpetionImpl {

@@ -13,12 +13,13 @@ public class BankServicesImpl implements  BankServicesInterface{
     BankRepoInterface bankRepository = new BankRepositoryImpl();
 
     @Override
-    public String registerAccount(String accountName, int age) throws BankServiceExpetionImpl {
+    public String registerAccount(String accountName, int age)
+            throws BankServiceExpetionImpl {
         Account account = new Account();
        if (age < 18 ){
             throw new BankServiceExpetionImpl("age is not valid");
         }
-        if (bankRepository.findByAccountName(accountName) != null ){
+       if (bankRepository.findByAccountName(accountName) != null ){
             throw new BankServiceExpetionImpl("account already exist ");
         }
         else {
@@ -27,12 +28,12 @@ public class BankServicesImpl implements  BankServicesInterface{
             account.setName(accountName);
             account.setName(account.getAccountName());
             account.setAge(account.getAge());
-         String  accountNumber = String.valueOf(accountNumberGenerator.nextInt(10000,99000));
+        String  accountNumber = String.valueOf(accountNumberGenerator.nextInt(10000,99000));
          account.setAccountNumber(accountNumber);
 
          bankRepository.creatAccountUser(account);
 
-        }
+    }
         return String.format("""
                 Account Name : %s \n
                 Account Number : %s \n

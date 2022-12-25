@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f36094c0-e218-4e1d-bf27-9ca95bdbff44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mySmallBankException/BankServiceExpetionImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/BankServicesImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/BankServicesInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/services/BankServicesImplTest.java" afterDir="false" />
+    <list default="true" id="f36094c0-e218-4e1d-bf27-9ca95bdbff44" name="Changes" comment="my mini bank app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/BankRepoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BankRepoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/BankRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BankRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data/repository/BankRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/repository/BankRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BankServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BankServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/services/BankServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/services/BankServicesImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +71,7 @@
       <recent name="data.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankServicesImplTest.testThatWeCanFindAccountWithAccountName">
+  <component name="RunManager" selected="JUnit.BankServicesImplTest.testThatAccountCanBeCreated">
     <configuration name="BankRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mySmallBank" />
       <extension name="coverage">
@@ -158,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankServicesImplTest.testThatWeCanFindAccountWithAccountName" />
         <item itemvalue="JUnit.BankServicesImplTest.testThatAccountCanBeCreated" />
+        <item itemvalue="JUnit.BankServicesImplTest.testThatWeCanFindAccountWithAccountName" />
         <item itemvalue="JUnit.BankRepositoryTest.testThatWeCanChangeAccountName" />
         <item itemvalue="JUnit.BankRepositoryTest" />
         <item itemvalue="JUnit.BankRepositoryTest.testThatUserCanCreateAccount" />
@@ -179,7 +174,8 @@
       <workItem from="1671892578909" duration="8804000" />
       <workItem from="1671910644373" duration="941000" />
       <workItem from="1671946793706" duration="8923000" />
-      <workItem from="1671969842579" duration="8645000" />
+      <workItem from="1671969842579" duration="11421000" />
+      <workItem from="1671989050524" duration="1772000" />
     </task>
     <task id="LOCAL-00001" summary="my mini bank app">
       <created>1671910986904</created>
@@ -188,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671910986904</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="my mini bank app">
+      <created>1671982142261</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671982142261</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
