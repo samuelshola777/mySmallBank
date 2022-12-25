@@ -1,5 +1,6 @@
 package data.repository;
 
+import data.model.Account;
 import data.model.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 class BankRepositoryTest {
 
-    User user = new User();
+    Account account = new Account();
     BankRepositoryImpl bankRepository;
     @BeforeEach
     @Test
@@ -18,48 +19,52 @@ class BankRepositoryTest {
     }
     @Test
     void testThatUserCanCreateAccount(){
-        bankRepository.creatAccountUser(user);
+        bankRepository.creatAccountUser(account);
         assertEquals(1, bankRepository.countAccountInBank());
     }
     @Test
     void accountCanBeFoundByAccountName(){
-        User user1 = new User();
-        user1.setName("daniel");
-        User user2 = new User();
-        user2.setName("shola");
-        User user3 = new User();
-        user3.setName("samuel");
-        bankRepository.creatAccountUser(user1);
-        bankRepository.creatAccountUser(user2);
-        bankRepository.creatAccountUser(user3);
-        assertEquals(user2, bankRepository.findByAccountName("shola"));
+      Account account1 = new Account();
+      account1.setAccountName("daniel");
+      Account account2 = new Account();
+      account2.setAccountName("shola");
+      Account account3 = new Account();
+      account3.setAccountName("samuel");
+        bankRepository.creatAccountUser(account1);
+        bankRepository.creatAccountUser(account2);
+        bankRepository.creatAccountUser(account3);
+        assertEquals(account3, bankRepository.findByAccountName("samuel"));
     }
     @Test
     void testThatAccountCanBeDeleted(){
-        User user1 = new User();
-        user1.setName("daniel");
-        User user2 = new User();
-        user2.setName("shola");
-        User user3 = new User();
-        user3.setName("samuel");
-        bankRepository.creatAccountUser(user1);
-        bankRepository.creatAccountUser(user2);
-        bankRepository.creatAccountUser(user3);
+        Account account1 = new Account();
+        account1.setAccountName("daniel");
+        Account account2 = new Account();
+        account2.setAccountName("shola");
+        Account account3 = new Account();
+        account3.setAccountName("samuel");
+        bankRepository.creatAccountUser(account1);
+        bankRepository.creatAccountUser(account2);
+        bankRepository.creatAccountUser(account3);
         bankRepository.deleteAccountByAccountName("daniel");
         assertEquals(2,bankRepository.countAccountInBank() );
 //
     }
     @Test
     void testThatWeCanChangeAccountName(){
-        User user1 = new User();
-        user1.setName("daniel");
-        User user2 = new User();
-        user2.setName("shola");
-        User user3 = new User();
-        user3.setName("samuel");
-
+        Account account1 = new Account();
+        account1.setAccountName("daniel");
+        Account account2 = new Account();
+        account2.setAccountName("shola");
+        Account account3 = new Account();
+        account3.setAccountName("samuel");
+        bankRepository.creatAccountUser(account1);
+        bankRepository.creatAccountUser(account2);
+        bankRepository.creatAccountUser(account3);
 bankRepository.changeAccountAge(16, "daniel");
-assertEquals(16, user1.getAge());
+assertEquals(16, account1.getAge());
+assertEquals(3, bankRepository.countAccountInBank());
+
     }
 
 

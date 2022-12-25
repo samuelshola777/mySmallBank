@@ -1,16 +1,15 @@
 package data.repository;
 
+import data.model.Account;
 import data.model.User;
 
 import java.util.HashMap;
 
 public class BankRepositoryImpl implements  BankRepoInterface{
-    private HashMap<String, User> accountUserList = new HashMap<>();
-
-
+private HashMap<String, Account> accountUserList = new HashMap<>();
     @Override
-    public String creatAccountUser(User user) {
-    accountUserList.put(user.getName(), user);
+    public String creatAccountUser(Account account) {
+    accountUserList.put(account.getAccountName(), account);
         return " Account created successfully ";
     }
 
@@ -31,9 +30,12 @@ public class BankRepositoryImpl implements  BankRepoInterface{
     }
 
     @Override
-    public User changeAccountAge(int age, String accountName) {
-        User userz = findByAccountName(accountName);
-        userz.setAge(age);
-        return userz;
+    public String changeAccountAge(int age, String accountName) {
+        Account account = (Account) findByAccountName(accountName);
+        account.setAge(age);
+        creatAccountUser(account);
+
+        return "age change  successful";
     }
+
 }
