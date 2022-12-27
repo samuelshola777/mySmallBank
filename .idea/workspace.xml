@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f36094c0-e218-4e1d-bf27-9ca95bdbff44" name="Changes" comment="my mini bank app">
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/BankController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mySmallBank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mySmallBank.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/model/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/model/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repository/BankRepoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BankRepoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repository/BankRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BankRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/BankServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BankServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BankServicesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BankServicesInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/repository/BankRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/repository/BankRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/services/BankServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/services/BankServicesImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,61 +76,24 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="data.model" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="services" />
       <recent name="data.repository" />
       <recent name="data.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankServicesImplTest.testThatAccountCanBeCreated">
-    <configuration name="BankRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="mySmallBank" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data.repository" />
-      <option name="MAIN_CLASS_NAME" value="data.repository.BankRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankRepositoryTest.testThatUserCanCreateAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mySmallBank" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data.repository" />
-      <option name="MAIN_CLASS_NAME" value="data.repository.BankRepositoryTest" />
-      <option name="METHOD_NAME" value="testThatUserCanCreateAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankRepositoryTest.testThatWeCanChangeAccountName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mySmallBank" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data.repository" />
-      <option name="MAIN_CLASS_NAME" value="data.repository.BankRepositoryTest" />
-      <option name="METHOD_NAME" value="testThatWeCanChangeAccountName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankServicesImplTest.testThatAccountCanBeCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankServicesImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mySmallBank" />
       <extension name="coverage">
         <pattern>
@@ -129,7 +103,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="services" />
       <option name="MAIN_CLASS_NAME" value="services.BankServicesImplTest" />
-      <option name="METHOD_NAME" value="testThatAccountCanBeCreated" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankServicesImplTest.testThatWeCanChangeAccountAgeByAccountName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mySmallBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.BankServicesImplTest" />
+      <option name="METHOD_NAME" value="testThatWeCanChangeAccountAgeByAccountName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,13 +140,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BankServicesImplTest.testThatweCanDeleteAccountByAccountName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mySmallBank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.BankServicesImplTest" />
+      <option name="METHOD_NAME" value="testThatweCanDeleteAccountByAccountName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankServicesImplTest.testThatAccountCanBeCreated" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BankServicesImplTest.testThatWeCanChangeAccountAgeByAccountName" />
+        <item itemvalue="JUnit.BankServicesImplTest.testThatweCanDeleteAccountByAccountName" />
+        <item itemvalue="JUnit.BankServicesImplTest" />
         <item itemvalue="JUnit.BankServicesImplTest.testThatWeCanFindAccountWithAccountName" />
-        <item itemvalue="JUnit.BankRepositoryTest.testThatWeCanChangeAccountName" />
-        <item itemvalue="JUnit.BankRepositoryTest" />
-        <item itemvalue="JUnit.BankRepositoryTest.testThatUserCanCreateAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +181,14 @@
       <workItem from="1671946793706" duration="8923000" />
       <workItem from="1671969842579" duration="11421000" />
       <workItem from="1671989050524" duration="1772000" />
+      <workItem from="1671996675214" duration="2508000" />
+      <workItem from="1672012747212" duration="10178000" />
+      <workItem from="1672036101781" duration="3774000" />
+      <workItem from="1672046206712" duration="1216000" />
+      <workItem from="1672061557814" duration="613000" />
+      <workItem from="1672069061043" duration="17702000" />
+      <workItem from="1672128839047" duration="11524000" />
+      <workItem from="1672152229163" duration="387000" />
     </task>
     <task id="LOCAL-00001" summary="my mini bank app">
       <created>1671910986904</created>

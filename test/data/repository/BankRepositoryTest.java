@@ -33,7 +33,8 @@ class BankRepositoryTest {
         bankRepository.creatAccountUser(account1);
         bankRepository.creatAccountUser(account2);
         bankRepository.creatAccountUser(account3);
-        assertEquals(account3, bankRepository.findByAccountName("samuel"));
+        assertEquals(account2, bankRepository.findByAccountName("shola"));
+        assertEquals(3, bankRepository.countAccountInBank());
     }
     @Test
     void testThatAccountCanBeDeleted(){

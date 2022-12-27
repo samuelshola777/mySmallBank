@@ -1,7 +1,6 @@
 package data.repository;
 
 import data.model.Account;
-import data.model.User;
 
 import java.util.HashMap;
 
@@ -14,8 +13,8 @@ private HashMap<String, Account> accountUserList = new HashMap<>();
     }
 
     @Override
-    public User findByAccountName(String accontName) {
-        return accountUserList.get(accontName);
+    public Account findByAccountName(String accountName) {
+        return accountUserList.get(accountName);
     }
 
 
@@ -31,11 +30,21 @@ private HashMap<String, Account> accountUserList = new HashMap<>();
 
     @Override
     public String changeAccountAge(int age, String accountName) {
-        Account account = (Account) findByAccountName(accountName);
+        Account account =  findByAccountName(accountName);
         account.setAge(age);
         creatAccountUser(account);
 
         return "age change  successful";
+    }
+
+    @Override
+    public HashMap<String, Account> viewAllAccount() {
+        for (int i = 0; i < accountUserList.size(); i++) {
+            if (accountUserList.size() > 0){
+                return accountUserList;
+        }
+        }
+        return null;
     }
 
 }

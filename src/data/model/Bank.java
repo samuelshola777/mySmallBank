@@ -1,6 +1,5 @@
 package data.model;
 
-import java.util.HashMap;
 
 public class Bank {
 

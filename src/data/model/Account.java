@@ -3,22 +3,28 @@ package data.model;
 import dtos.request.AccountRequest;
 import mySmallBankException.AccountException;
 
-public class Account  extends User {
+public class Account   {
     private String accountName;
     private String accountNumber;
     private int balance ;
 
-    private int age;
-
-    @Override
     public int getAge() {
         return age;
     }
 
-    @Override
     public void setAge(int age) {
         this.age = age;
     }
+
+    private int age;
+
+
+    public Account(String accountName, String accountNumber, int age) {
+        this.accountName = accountName;
+        this.accountNumber = accountNumber;
+        this.age = age;
+    }
+
 
     private  User user;
 
@@ -47,10 +53,6 @@ public Account(){}
     }
 
 public String deposit(int amountDeposit) throws AccountException {
-//    if (accountName == null) throw new
-//            AccountException ("please you do not an account ");
-//    if (accountNumber == null) throw
-//            new AccountException ("please you do not an account ");
     if (accountName == null || accountNumber == null ){
         throw new AccountException("you have to " +
                 "" +
@@ -64,10 +66,6 @@ public String deposit(int amountDeposit) throws AccountException {
 }
 
     public int withdraw(int withdrawalAmount) throws  AccountException {
-//        if (accountName == null) throw new AccountException
-//        ("please you do not an account ");
-//        if (accountNumber == null) throw new
-//        AccountException ("please you do not an account ");
         if (accountName == null || accountNumber == null ){
             throw new AccountException("you have to " +
                     "" +
@@ -79,16 +77,6 @@ public String deposit(int amountDeposit) throws AccountException {
         return  balance -= withdrawalAmount ;
     }
 
-//    public String createAccount(AccountRequest accountRequest) {
-//        setAccountName(accountRequest.getAccountName());
-//        setAccountNumber(accountRequest.getAccountNumber());
-//        return "registration successful";
-//    }
-    public String createAccount(String accountName, String accountNumber) {
-        setAccountName(accountName);
-        setAccountNumber(accountNumber);
-        return "registration successful";
-    }
 
     public int viewBalance() throws AccountException {
         if (accountName == null || accountNumber == null ){
@@ -98,14 +86,17 @@ public String deposit(int amountDeposit) throws AccountException {
         }
         return getBalance();
     }
-    public String toString(){
+   public String toString(){
         return String.format("""
+                \n
                 Account Name : %s \n
                 Account Number : %s \n
                 Account Balance : %s \n
                 Account User Age : %d \n
-                """, getName(), getAccountNumber()
+                """, getAccountName(), getAccountNumber()
         ,getBalance(),getAge());
     }
+
+
 
 }

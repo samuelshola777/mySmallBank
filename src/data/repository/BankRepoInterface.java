@@ -1,15 +1,17 @@
 package data.repository;
 
 import data.model.Account;
-import data.model.User;
+
+import java.util.HashMap;
 
 public interface BankRepoInterface {
 
     String creatAccountUser(Account account);
 
-    User findByAccountName(String accontName);
+    Account findByAccountName(String accountName);
     int countAccountInBank();
     String deleteAccountByAccountName(String accountName);
 
   String changeAccountAge(int age, String accountName);
+  HashMap<String, Account> viewAllAccount();
 }
